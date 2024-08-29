@@ -13,10 +13,17 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set({"n", "v"}, "<leader>y", "+y")
 vim.keymap.set({"n", "v", "i"}, "§", "<Esc>")
 
-vim.keymap.set({"n"}, "<leader>n", ":bnext<cr>")
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
+vim.keymap.set("n", "<leader>fmt", vim.lsp.buf.format)
+
+vim.keymap.set({"n"}, "<leader>m", ":bnext<cr>")
 vim.keymap.set({"n"}, "<leader>b", ":bprev<cr>")
 
 vim.keymap.set({"n"}, "<leader>g", ":Git ")
 
 vim.keymap.set({"n"}, "<leader>w", "<C-w>w")
 vim.keymap.set({"n"}, "<leader>vs", ":vsplit<cr>")
+vim.keymap.set({"n"}, "<leader>t", ":term<cr>")
+vim.keymap.set({"n"}, "<leader>nprb", ":term<cr>inpm run build && exit<cr><cr>")
+vim.keymap.set("t", "<esc>", "<C-\\><C-n>")
+vim.keymap.set("n", "<leader>er", ":Trouble<cr>")
