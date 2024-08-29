@@ -1,3 +1,5 @@
+vim.opt.updatetime = 300
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

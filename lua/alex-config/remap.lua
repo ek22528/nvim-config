@@ -13,9 +13,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set({"n", "v"}, "<leader>y", "+y")
 vim.keymap.set({"n", "v", "i"}, "§", "<Esc>")
 
-vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
-vim.keymap.set("n", "<leader>fmt", vim.lsp.buf.format)
-
 vim.keymap.set({"n"}, "<leader>m", ":bnext<cr>")
 vim.keymap.set({"n"}, "<leader>b", ":bprev<cr>")
 
